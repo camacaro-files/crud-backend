@@ -1,0 +1,18 @@
+meta {
+  name: Login User
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:3000/api/auth/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "camacaro.a.p.r@gmail.com",
+    "password": "LavainadeBruno"
+  }
+}

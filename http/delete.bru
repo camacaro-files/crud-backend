@@ -1,0 +1,15 @@
+meta {
+  name: Delete Product
+  type: http
+  seq: 5
+}
+
+delete {
+  url: http://localhost:3000/api/products/1
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJjYW1hY2Fyby5hLnAuckBnbWFpbC5jb20iLCJpYXQiOjE3NzU0NDY1MzcsImV4cCI6MTc3NTUzMjkzN30.PK82kG_1X5q0EIBaF17Rkt1j50oN7ZIkxZ0LkkcFhok
+}

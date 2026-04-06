@@ -1,0 +1,24 @@
+meta {
+  name: Update Product
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3000/api/products/1
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJjYW1hY2Fyby5hLnAuckBnbWFpbC5jb20iLCJpYXQiOjE3NzU0NDY1MzcsImV4cCI6MTc3NTUzMjkzN30.PK82kG_1X5q0EIBaF17Rkt1j50oN7ZIkxZ0LkkcFhok
+}
+
+body:json {
+  {
+    "name": "Laptop Pro",
+    "description": "Versión actualizada",
+    "price": 1499.99,
+    "stock": 5
+  }
+}

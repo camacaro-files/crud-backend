@@ -1,0 +1,18 @@
+meta {
+  name: Register User
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:3000/api/auth/register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "camacaro.a.p.r@gmail.com",
+    "password": "LavainadeBruno"
+  }
+}
