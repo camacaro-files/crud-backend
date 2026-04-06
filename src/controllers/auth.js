@@ -1,9 +1,9 @@
 import { PrismaClient } from '@prisma/client'
-import { PrismaLibSql } from '@prisma/adapter-libsql'
+import { PrismaPg } from '@prisma/adapter-pg'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 
-const adapter = new PrismaLibSql({ url: 'file:./prisma/dev.db' })
+const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL })
 const prisma = new PrismaClient({ adapter })
 
 export const register = async (req, res) => {
